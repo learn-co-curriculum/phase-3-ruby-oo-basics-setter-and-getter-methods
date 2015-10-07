@@ -79,7 +79,7 @@ describe 'Person' do
         beyonce = Person.new
         beyonce.job = "Singer"
 
-        expect(beyonce.instance_variable_get(:@breed)).to eq("Singer")
+        expect(beyonce.instance_variable_get(:@job)).to eq("Singer")
       end
     end
 
