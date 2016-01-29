@@ -35,3 +35,5 @@ You'll be teaching `Person` about their names through two methods, `#name`, and 
 You'll be teaching `Person` about their names through two methods, `#job`, and `#job=` that read and write to a corresponding instance variable `@job`.
 
 When you're done submit the lab with `learn submit`
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/ruby-object-attributes-lab' title='Ruby Object Attributes Lab'>Ruby Object Attributes Lab</a> on Learn.co and start learning to code for free.</p>
