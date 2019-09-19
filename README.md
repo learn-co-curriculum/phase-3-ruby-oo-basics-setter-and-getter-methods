@@ -22,6 +22,8 @@ You'll be teaching `Dog` about their names through two methods, `#name`, and `#n
 
 ### Give a Dog a Breed
 
+![Dog Breeds](https://curriculum-content.s3.amazonaws.com/module-1/ruby-oo-fundamentals/object-attributes-lab/Image_142_CommonDogBreeds.png)
+
 You'll be teaching `Dog` about their breed through two methods, `#breed`, and `#breed=` that read and write to a corresponding instance variable `@breed`.
 
 ## `Person` and `lib/person.rb`
