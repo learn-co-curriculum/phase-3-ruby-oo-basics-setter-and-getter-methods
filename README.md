@@ -12,7 +12,7 @@ This lab is all about using instance variables within a class to create methods 
 
 ## Instructions
 
-Get started with this lab by opening it with `learn open` and running `learn`.
+Get started with this lab by clicking the "Fork" button, cloning, and running `learn test`.
 
 ## `Dog` and `lib/dog.rb`
 
