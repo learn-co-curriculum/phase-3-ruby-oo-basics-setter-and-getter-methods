@@ -38,4 +38,4 @@ You'll be teaching `Person` about their jobs through two methods, `#job`, and `#
 
 When you're done submit the lab with `learn submit`
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/ruby-object-attributes-lab'>Object Attributes Lab</a> on Learn.co and start learning to code for free.</p>
+
