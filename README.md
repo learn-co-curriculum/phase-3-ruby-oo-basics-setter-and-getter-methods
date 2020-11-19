@@ -35,7 +35,3 @@ You'll be teaching `Person` about their names through two methods, `#name`, and 
 ### Give a Person a Job
 
 You'll be teaching `Person` about their jobs through two methods, `#job`, and `#job=` that read and write to a corresponding instance variable `@job`.
-
-When you're done submit the lab with `learn submit`
-
-
