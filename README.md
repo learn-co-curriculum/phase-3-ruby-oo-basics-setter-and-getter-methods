@@ -1,37 +1,100 @@
-# Object Attributes Lab
+# Setter and Getter Methods
 
-## Objectives 
+## Learning Goals
 
-1. Define ruby classes.
-2. Define methods that read from and write to instance variables.
-3. Create object properties using methods and instance variables.
+- Learn more about setter and getter methods
+- Build and use setter and getter methods
 
-## Overview
+## Introduction
 
-This lab is all about using instance variables within a class to create methods that represent attributes or properties of an object.
+So far, we've learned how to build classes and give them instance methods. We
+also learned how to create instance variables and use setter and getter methods
+to set and retrieve their values, respectively. In this lesson, we'll learn more
+about these methods and why they're important.
 
-## Instructions
+## Setters and Getters
 
-Get started with this lab by clicking the "Fork" button, cloning, and running `learn test`.
+Setter and getter methods are integral to object-oriented programming in Ruby.
+They are what enable us to assign attributes to our objects (e.g., `name` or
+`breed`) and retrieve the value of those attributes.
 
-## `Dog` and `lib/dog.rb`
+To review, if we have a `Person` class, our setter and getter for the `name`
+attribute will look like this:
 
-### Give a Dog a Name
+```ruby
+class Person
 
-You'll be teaching `Dog` about their names through two methods, `#name`, and `#name=` that read and write to a corresponding instance variable `@name`.
+  def name=(name)
+    @name = name
+  end
 
-### Give a Dog a Breed
+  def name
+    @name
+  end
+
+end
+```
+
+Note that the setter method is defined with an `=` (equals sign) appended to the
+name of the method. The `=` is then followed by the parameter, `name`, in
+parentheses. The `=` in the method definition line is part of the method's name;
+it is simply a _character_ that identifies this method as a setter method. The
+actual assignment — the use of the _operator_ `=` to set a value — happens
+inside the method.
+
+What this means is that, if we were to create a `Person` instance and then use
+the usual Ruby syntax to call the setter method and pass it an argument, our
+code would look like this:
+
+```ruby
+kanye = Person.new
+kanye.name=("Kanye")
+```
+
+Note that this is exactly the same as calling any method that takes an argument on
+any object:
+
+```ruby
+any_object.any_method(arg)
+```
+
+The only difference is the `=` that is part of our method's name, identifying it
+as a setter method.
+
+We don't have to use this syntax to call our setter method, however. Instead,
+Ruby provides us a bit of syntactic sugar for setter methods that enables us to
+do this:
+
+```ruby
+kanye = Person.new
+kanye.name = "Kanye"
+```
+
+This syntax is easier to read and more intuitive and is therefore preferred.
+
+Finally, to ask our `kanye` object to return the value of its `name` attribute,
+we would do this:
+
+```ruby
+kanye.name #=> "Kanye"
+```
+
+Here we are calling the getter method, `name`, that belongs to every instance of
+our `Person` class.
+
+## Lab
+
+Fork and clone the lab and run `learn test`. To get the tests passing, you will
+need to complete the following tasks:
+
+### `Dog` and `lib/dog.rb`
+
+1. Add a getter and setter method for the instance variable `@name`.
+2. Add a getter and setter method for the instance variable `@breed`.
 
 ![Dog Breeds](https://curriculum-content.s3.amazonaws.com/module-1/ruby-oo-fundamentals/object-attributes-lab/Image_142_CommonDogBreeds.png)
 
-You'll be teaching `Dog` about their breed through two methods, `#breed`, and `#breed=` that read and write to a corresponding instance variable `@breed`.
+### `Person` and `lib/person.rb`
 
-## `Person` and `lib/person.rb`
-
-### Give a Person a Name
-
-You'll be teaching `Person` about their names through two methods, `#name`, and `#name=` that read and write to a corresponding instance variable `@name`.
-
-### Give a Person a Job
-
-You'll be teaching `Person` about their jobs through two methods, `#job`, and `#job=` that read and write to a corresponding instance variable `@job`.
+1. Add a getter and setter method for the instance variable `@name`.
+2. Add a getter and setter method for the instance variable `@job`.
