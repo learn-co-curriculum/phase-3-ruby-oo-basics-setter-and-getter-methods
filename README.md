@@ -24,10 +24,12 @@ attribute will look like this:
 ```ruby
 class Person
 
+  # setter method
   def name=(name)
     @name = name
   end
 
+  # getter method
   def name
     @name
   end
@@ -82,19 +84,22 @@ kanye.name #=> "Kanye"
 Here we are calling the getter method, `name`, that belongs to every instance of
 our `Person` class.
 
-## Lab
+## Instructions
 
 Fork and clone the lab and run `learn test`. To get the tests passing, you will
 need to complete the following tasks:
 
 ### `Dog` and `lib/dog.rb`
 
-1. Add a getter and setter method for the instance variable `@name`.
-2. Add a getter and setter method for the instance variable `@breed`.
+1. Define a `name` getter and a `name=` setter method for the instance variable
+   `@name`.
+2. Define a `breed` getter and a `breed=` method for the instance variable
+   `@breed`.
 
 ![Dog Breeds](https://curriculum-content.s3.amazonaws.com/module-1/ruby-oo-fundamentals/object-attributes-lab/Image_142_CommonDogBreeds.png)
 
 ### `Person` and `lib/person.rb`
 
-1. Add a getter and setter method for the instance variable `@name`.
-2. Add a getter and setter method for the instance variable `@job`.
+1. Define a `name` getter and a `name=` method for the instance variable
+   `@name`.
+2. Define a `job` getter and a `job=` method for the instance variable `@job`.
