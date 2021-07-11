@@ -93,13 +93,13 @@ need to complete the following tasks:
 
 1. Define a `name` getter and a `name=` setter method for the instance variable
    `@name`.
-2. Define a `breed` getter and a `breed=` method for the instance variable
+2. Define a `breed` getter and a `breed=` setter method for the instance variable
    `@breed`.
 
 ![Dog Breeds](https://curriculum-content.s3.amazonaws.com/module-1/ruby-oo-fundamentals/object-attributes-lab/Image_142_CommonDogBreeds.png)
 
 ### `Person` and `lib/person.rb`
 
-1. Define a `name` getter and a `name=` method for the instance variable
+1. Define a `name` getter and a `name=` setter method for the instance variable
    `@name`.
-2. Define a `job` getter and a `job=` method for the instance variable `@job`.
+2. Define a `job` getter and a `job=` setter method for the instance variable `@job`.
