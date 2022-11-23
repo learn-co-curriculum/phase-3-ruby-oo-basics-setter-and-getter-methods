@@ -49,12 +49,12 @@ the usual Ruby syntax to call the setter method and pass it an argument, our
 code would look like this:
 
 ```ruby
-kanye = Person.new
-kanye.name=("Kanye")
+brennan = Person.new
+brennan.name=("Brennan")
 ```
 
-Note that this is exactly the same as calling any method that takes an argument on
-any object:
+Note that this is exactly the same as calling any method that takes an argument
+on any object:
 
 ```ruby
 any_object.any_method(arg)
@@ -68,17 +68,17 @@ Ruby provides us a bit of syntactic sugar for setter methods that enables us to
 do this:
 
 ```ruby
-kanye = Person.new
-kanye.name = "Kanye"
+brennan = Person.new
+brennan.name = "Brennan"
 ```
 
 This syntax is easier to read and more intuitive and is therefore preferred.
 
-Finally, to ask our `kanye` object to return the value of its `name` attribute,
-we would do this:
+Finally, to ask our `brennan` object to return the value of its `name`
+attribute, we would do this:
 
 ```ruby
-kanye.name #=> "Kanye"
+brennan.name #=> "Brennan"
 ```
 
 Here we are calling the getter method, `name`, that belongs to every instance of
@@ -93,8 +93,8 @@ need to complete the following tasks:
 
 1. Define a `name` getter and a `name=` setter method for the instance variable
    `@name`.
-2. Define a `breed` getter and a `breed=` setter method for the instance variable
-   `@breed`.
+2. Define a `breed` getter and a `breed=` setter method for the instance
+   variable `@breed`.
 
 ![Dog Breeds](https://curriculum-content.s3.amazonaws.com/module-1/ruby-oo-fundamentals/object-attributes-lab/Image_142_CommonDogBreeds.png)
 
@@ -102,4 +102,5 @@ need to complete the following tasks:
 
 1. Define a `name` getter and a `name=` setter method for the instance variable
    `@name`.
-2. Define a `job` getter and a `job=` setter method for the instance variable `@job`.
+2. Define a `job` getter and a `job=` setter method for the instance variable
+   `@job`.
